@@ -24,6 +24,12 @@ app.mount(
     name="assets"
 )
 
+# app.mount(
+#     "/assets",
+#     StaticFiles(directory=os.path.join(BASE_DIR, "../frontend/assets")),
+#     name="assets"
+# )
+
 # LOGIN
 @app.post("/login")
 async def login(user: dict):
